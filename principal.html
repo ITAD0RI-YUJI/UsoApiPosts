@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>話 || Página principal</title>
+    <link rel="icon" href="multimedia/logo.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="syles/reset.css">
+    <link rel="stylesheet" href="syles/bases.css">
+    <link rel="stylesheet" href="syles/main/principal.css">
+    <link rel="stylesheet" href="syles/main/header/header.css">
+    <link rel="stylesheet" href="syles/main/btn_plus/btn-plus.css">
+    <link rel="stylesheet" href="syles/nav/nav.css">
+    <link rel="stylesheet" href="syles/main/post_container/post.css">
+    <link rel="stylesheet" href="syles/section_der/following-list.css">
+    <link rel="stylesheet" href="syles/section_der/profile-view.css">
+
+    <script src="js/heartAnimation.js" defer></script>
+    <script type="module" src="js/apiAplication.js"></script>
+</head>
+<body>
+    <main class="main">
+        <section class="section section--left">
+            <nav class="nav">
+                <ul>
+                    <li class="list-item">
+                        <a href="" class="list__link">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-home"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+                            principal
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="" class="list__link">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-heart-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 20l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.96 6.053" /><path d="M16 19h6" /><path d="M19 16v6" /></svg>
+                            me gusta 
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="" class="list__link">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-bookmark-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v5" /><path d="M16 19h6" /><path d="M19 16v6" /></svg>
+                            guardados
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="" class="list__link">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-logout"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" /><path d="M9 12h12l-3 -3" /><path d="M18 15l3 -3" /></svg>
+                            sign out
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="decoration-icon">
+                <svg  xmlns="http://www.w3.org/2000/svg" title="company icon" style="color: var(--white);" width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-torii"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4c5.333 1.333 10.667 1.333 16 0" /><path d="M4 8h16" /><path d="M12 5v3" /><path d="M18 4.5v15.5" /><path d="M6 4.5v15.5" /></svg>
+            </div>
+        </section>
+
+        <section class="section section--center">
+            <header class="header">
+                <div class="filter__container">
+                    <div class="filter_option">
+                        <p class="filter_p">Anime</p>
+                    </div>
+                    <div class="filter_option">
+                        <p class="filter_p">Programción</p>
+                    </div>
+                    <div class="filter_option">
+                        <p class="filter_p">Lofi</p>
+                    </div>
+                    <div class="filter_option">
+                        <p class="filter_p">Noticias</p>
+                    </div>
+                    <div class="filter_option">
+                        <p class="filter_p">Tecnología</p>
+                    </div>
+                    <div class="filter_option">
+                        <p class="filter_p">Motos</p>
+                    </div>
+                    <div class="filter_option">
+                        <p class="filter_p">HTML</p>
+                    </div>
+                    <div class="filter_option">
+                        <p class="filter_p">CSS</p>
+                    </div>
+                    <div class="filter_option">
+                        <p class="filter_p">JavaScript</p>
+                    </div>
+                    <div class="filter_option">
+                        <p class="filter_p">React Js</p>
+                    </div>
+                    <div class="filter_option">
+                        <p class="filter_p">Angular 19</p>
+                    </div>
+                    <div class="filter_option explor">
+                        <p class="filter_p">Explorar</p>
+                    </div>
+                </div>
+            </header>
+
+            <div class="btn-plus" title="Crear">
+                <svg  xmlns="http://www.w3.org/2000/svg" style="color: var(--white);" width="22"  height="22"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+                <p class="btn-plus_p">Opinar</p>
+            </div>
+
+            <section class="post_container">
+                <article class="post">
+                    <header class="post_header">
+                        <div class="post_info-container">
+                            <img src="multimedia/Turbo_abuela-nigth.jpg" alt="Profile picture" class="profile-picture"/>
+
+                            <div class="post_name-container">
+                                <div class="post_post-info">
+                                    <p class="post_letter post_p post_user-name">Turbo Abuela</p>
+                                    <p class="post_arroba">@TurboAbuela</p>
+                                    <span class="post_date"> • 25 nov</span>
+                                </div>
+                                <p class="post_letter post_p post_user-id">123</p>
+                            </div>
+                        </div>
+
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24" style="color: var(--white);" height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-dots-vertical"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg>
+                    </header>
+
+                    <div class="post_body">
+                        <h2 class="post_letter post_title">Post´s title</h2>
+
+                        <p class="post_letter post_body--p">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum illum minima est recusandae laborum? Iure, quisquam suscipit alias exercitationem veniam quis recusandae, obcaecati, harum quas nam mollitia ullam optio dolorem.
+                        </p>
+                    </div>
+
+                    <div class="post_tags">
+                        <span class="tag post_letter">Dandadan</span>
+                        <span class="tag post_letter">TurboAbuela</span>
+                    </div>
+
+                    <div class="post_general-info">
+                        <button class="btn post_btn btn-heart">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon user-opinion post-icon icon-like icon-tabler icons-tabler-outline icon-tabler-heart"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /></svg>
+                            <span class="post_span">256</span>
+                        </button>
+                        <button class="btn post_btn">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon user-opinion icon-dislike post-icon icon-tabler icons-tabler-outline icon-tabler-heart-broken"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" /><path d="M12 6l-2 4l4 3l-2 4v3" /></svg>
+                            <span class="post_span">12</span>
+                        </button>
+                        <button class="btn post_btn">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-view post-icon icon-tabler icons-tabler-outline icon-tabler-chart-bar"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 13a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M15 9a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M9 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M4 20h14" /></svg>
+                            <span class="post_span">320</span>
+                        </button>
+                        <button class="btn post_btn">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-share post-icon icon-tabler icons-tabler-outline icon-tabler-share"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M8.7 10.7l6.6 -3.4" /><path d="M8.7 13.3l6.6 3.4" /></svg>
+                            <span class="post_span">share</span>
+                        </button>
+                        <button class="btn post_btn">
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-share post-icon icon-tabler icons-tabler-outline icon-tabler-bookmark-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v5" /><path d="M16 19h6" /><path d="M19 16v6" /></svg>
+                            <span class="post_span">save</span>
+                        </button>
+                    </div>
+                </article>
+               
+            </section>
+        </section>
+
+        <section class="section section--right">
+            <div class="profile">
+                <img src="multimedia/kanroji_profile.jpg" alt="profile-picture" class="profile_user-profile-picture">
+                
+                <div class="profile_info">
+                    <a href="" class="profile_name">_Ore_</a>
+                    <p class="profile_id">12345</p>
+                </div>
+
+                <svg  xmlns="http://www.w3.org/2000/svg" title="change account" width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-status-change"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M18 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" /><path d="M6 12v-2a6 6 0 1 1 12 0v2" /><path d="M15 9l3 3l3 -3" /></svg>
+            </div>
+
+            <section class="following">
+                <h3>sugerencias</h3>
+
+                <div class="folliwing_sub-container">
+                    <article class="profile">
+                        <img src="multimedia/yor.jpg" alt="profile-picture" class="profile_user-profile-picture">
+                        
+                        <div class="profile_info">
+                            <a href="" class="profile_name">Yor_forger</a>
+                            <p class="profile_id">10589</p>
+                        </div>
+        
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>                    
+                    </article>
+                    
+                    <article class="profile">
+                        <img src="multimedia/tomioka.jpg" alt="profile-picture" class="profile_user-profile-picture">
+                        
+                        <div class="profile_info">
+                            <a href="" class="profile_name">Tomioka</a>
+                            <p class="profile_id">57945</p>
+                        </div>
+        
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>                    
+                    </article>
+                    
+                    <article class="profile">
+                        <img src="multimedia/makima.jpg" alt="profile-picture" class="profile_user-profile-picture">
+                        
+                        <div class="profile_info">
+                            <a href="" class="profile_name">Makima</a>
+                            <p class="profile_id">245798</p>
+                        </div>
+        
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>                    
+                    </article>
+                    
+                    <article class="profile">
+                        <img src="multimedia/luffy.jpg" alt="profile-picture" class="profile_user-profile-picture">
+                        
+                        <div class="profile_info">
+                            <a href="" class="profile_name">Luffy</a>
+                            <p class="profile_id">547894</p>
+                        </div>
+        
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>                    
+                    </article>
+                    
+                    <article class="profile">
+                        <img src="multimedia/asta.jpg" alt="profile-picture" class="profile_user-profile-picture">
+                        
+                        <div class="profile_info">
+                            <a href="" class="profile_name">Asta</a>
+                            <p class="profile_id">25789</p>
+                        </div>
+        
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M16 19h6" /><path d="M19 16v6" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4" /></svg>                    
+                    </article>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
