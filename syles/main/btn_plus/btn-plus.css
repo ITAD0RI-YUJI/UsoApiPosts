@@ -1,0 +1,25 @@
+.btn-plus{
+    background-color: var(--shadow-moon);
+    width: 120px;
+    height: 60px;
+    border-radius: 15px;
+
+    cursor: pointer;
+    transition: all .2s;
+    overflow: hidden;
+    font-weight: bold;
+    color: var(--white);
+
+    position: absolute;
+    right: 1.25em;
+    bottom: 1.25em;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn-plus:hover{
+    transform: scale(.99);
+    opacity: .8;
+}

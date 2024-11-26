@@ -1,0 +1,40 @@
+.profile{
+    color: var(--white);
+    padding: 0.625em;
+    border-radius: 0.3125em;
+    
+    display: flex;
+    align-items: center;
+    gap: 0.9375em;
+}
+
+.profile_user-profile-picture{
+    width: 1.875em;
+    height: 1.875em;
+
+    border-radius: 50%;
+}
+
+.profile_name{
+    display: block;
+
+    text-decoration: none;
+    color: var(--white);
+
+    padding-bottom: 0.625em;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.profile_id{
+    font-size: 0.6875em;
+    color: var(--mancha);
+    opacity: .8;
+}
+
+.profile .icon{
+    color: var(--purple);
+    cursor: pointer;
+
+    margin-left: auto;
+}
