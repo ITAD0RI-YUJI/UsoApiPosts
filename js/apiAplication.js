@@ -1,7 +1,7 @@
 import {getApiContent} from './apiCall.js';
 import {appendPost} from './append.js';
 import {tags} from './tags.js';
-import {nombreAleatorio , names} from './user-name.js';
+import {users , getUserName} from './user-name.js';
 import {fecha , mesArray} from './fecha.js';
  
 const apiUrl = 'https://dummyjson.com/posts';
@@ -18,9 +18,11 @@ async function useInfo(url){
     let post = infoApi.posts;
 
     post.forEach(postSelected => {
-        console.log(tags(postSelected.tags));
+        // console.log(tags(postSelected.tags));
+        console.log(getUserName(users));
+        const usuario = getUserName(users);
         
-        appendPost(nombreAleatorio(names) , postSelected.id , postSelected.title , postSelected.body , postSelected.tags, 
+        appendPost(usuario.nombre , usuario.info.img , usuario.info.arroba , postSelected.id , postSelected.title , postSelected.body , postSelected.tags, 
                     postSelected.reactions.likes , postSelected.reactions.dislikes , postSelected.views , fecha(mesArray));
     });
 }

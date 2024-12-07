@@ -1,4 +1,4 @@
-export function appendPost(userName , userId , titlePost , bodyPost , postTag , postLike , postDislike , postView , fecha){
+export function appendPost(userName , img , arroba ,  userId , titlePost , bodyPost , postTag , postLike , postDislike , postView , fecha){
     
     let postContainer = document.querySelector('.post_container');
 
@@ -6,12 +6,12 @@ export function appendPost(userName , userId , titlePost , bodyPost , postTag , 
     `<article class="post">
                 <header class="post_header">
                     <div class="post_info-container">
-                        <img src="${userName[1]}" alt="Profile picture" class="profile-picture"/>
+                        <img src="${img}" alt="Profile picture" class="profile-picture"/>
 
                         <div class="post_name-container">
                             <div class="post_post-info">
-                                    <p class="post_letter post_p post_user-name">${userName[0]}</p>
-                                    <p class="post_arroba">${"@".concat(userName[2])}</p>
+                                    <p class="post_letter post_p post_user-name">${userName}</p>
+                                    <p class="post_arroba">${"@".concat(arroba)}</p>
                                     <span class="post_date"> • ${fecha}</span>
                                 </div>
                             <p class="post_letter post_p post_user-id">${userId}</p>
