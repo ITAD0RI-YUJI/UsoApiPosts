@@ -1,0 +1,139 @@
+.post_container{
+    height: calc(100% - 45px);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.9375em;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.post_container::-webkit-scrollbar{
+    background-color: var(--oscuro);
+    width: 0.0625em;
+}
+
+.post{
+    background-color: var(--gray);
+    width: 95%;
+
+    box-sizing: border-box;
+    padding: 0.625em;
+
+    border-radius: 0.3125em;
+}
+
+.post_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post_info-container{
+    gap: 0.625em;
+    display: flex;
+    align-items: center;
+}
+
+.post_post-info{
+    display: flex;
+    gap: 0.625em;
+}
+
+.post_post-info span,
+.post_arroba{
+    color: var(--white);
+    opacity: .5;
+}
+
+.profile-picture{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post_letter{
+    color: var(--white);
+}
+
+.post_user-name{
+    font-weight: bold;
+    padding-bottom: 0.3125em;
+}
+
+.post_user-id{
+    font-size: 0.875em;
+    font-weight: 100;
+}
+
+.post_body{
+    box-sizing: border-box;
+    padding: 0.9375em 0.125em;
+}
+
+.post_title{
+    font-size: 1.25em;
+    padding-bottom: 0.9375em;
+}
+
+.post_body--p{
+    font-size: 0.9375em;
+    line-height: 1.375em;
+    /* text-wrap: balance; */
+}
+
+.post_tags{
+    padding-bottom: 1.125rem;
+    box-sizing: border-box;
+    font-size: 0.75em;
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.625em;
+}
+
+.tag{
+    cursor: pointer;
+    background-color: var(--oscuro);
+    padding: 0.625em;
+    border-radius: 0.25em;
+
+    transition: all .2s;
+}
+
+.tag:hover{
+    opacity: .7;
+}
+
+.post_general-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 60%;
+}
+
+.post_btn{
+    font-family: var(--font);
+
+    background-color: transparent;
+    color: var(--mancha);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.active{
+    color: var(--shadow-moon);
+}

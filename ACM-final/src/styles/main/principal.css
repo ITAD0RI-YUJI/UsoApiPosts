@@ -1,0 +1,39 @@
+.main{
+    display: flex;
+    gap: 0.625em;
+
+    box-sizing: border-box;
+    padding: 1.25em;
+    height: 100vh;
+}
+
+.section{
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0.625em;
+
+    border-radius: 0.5em;
+}
+
+.section--center{
+    background-color: var(--oscuro);
+    width: 76%;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.section--right{
+    width: 16%;
+    background-color: var(--oscuro);
+}
+
+.section--left{
+    padding-left: 0;
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
