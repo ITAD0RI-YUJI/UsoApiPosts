@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import login from './js/login.js'
 
 import './styles/reset.css'
 import './styles/login/conatainerDraw.css'
@@ -8,27 +9,35 @@ import './styles/login/form.css'
 import './styles/bases.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [userName , setUserName] = useState('')
+  const [password , setPassword] = useState('')
+
+  async function handleLogin(e){
+    e.preventDefault()
+    const dataRes = await login(password , userName)
+
+    console.log(dataRes)
+  }
 
   return (
   <>
     <div className="container">
       
       <div className="container_div container_div--draw">
-        <span className="strella strella_grande" />
-        <span className="strella strella_grande" />
-        <span className="strella strella_grande" />
-        <span className="strella strella_peque" />
-        <span className="strella strella_peque" />
-        <span className="strella strella_peque" />
+        <span className="strella strella_grande"/>
+        <span className="strella strella_grande"/>
+        <span className="strella strella_grande"/>
+        <span className="strella strella_peque"/>
+        <span className="strella strella_peque"/>
+        <span className="strella strella_peque"/>
 
         <div className="moon">
           <div className="moon_mancha moon_mancha--uno">
-            <span className="mancha_span mancha_span--uno" />
+            <span className="mancha_span mancha_span--uno"/>
           </div>
           
           <div className="moon_mancha moon_mancha--dos">
-            <span className="mancha_span mancha_span--dos" />
+            <span className="mancha_span mancha_span--dos"/>
           </div>
         </div>
 
@@ -38,12 +47,12 @@ function App() {
       </div>
       
         <div className="container_div container_div--form">
-          <form action="" className="form">
+          <form action="" className="form" onSubmit={(e) => handleLogin(e)}>
             <fieldset className="fieldset_input">
               <label htmlFor="name">Nombre de Usuario</label>
-              <input type="text" className="form_usuario" required="" autoComplete="off"/>
+              <input type="text" className="form_usuario" required="" autoComplete="off" onChange={(e) => setUserName(e.target.value)}/>
               <label htmlFor="password" className='label_dos'>Contraseña</label>
-              <input type="password" className="form_usuario" required=""/>
+              <input type="password" className="form_usuario" required="" onChange={(e) => setPassword(e.target.value)}/>
             </fieldset>
 
             <fieldset className="fieldset_btn">
