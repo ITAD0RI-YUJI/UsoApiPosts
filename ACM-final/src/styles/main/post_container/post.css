@@ -137,3 +137,7 @@
 .active{
     color: var(--shadow-moon);
 }
+
+.post .icon{
+    color: var(--white);
+}

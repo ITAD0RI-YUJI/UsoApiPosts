@@ -23,3 +23,7 @@
     transform: scale(.99);
     opacity: .8;
 }
+
+.btn-plus .icon{
+    color: var(--white);
+}

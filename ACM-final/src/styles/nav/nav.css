@@ -22,10 +22,10 @@
     /* background-color: rebeccapurple; */
 
     box-sizing: border-box;
-    padding: 5px 0;
+    padding: 0.3125em 0;
 
     transition: all .1s;
-    border-radius: 5px;
+    border-radius: 0.3125em;
 
     display: flex;
     gap: 0.625em;
@@ -36,4 +36,8 @@
 
 .list__link:hover{
     opacity: .5;
+}
+
+.icon_decoration{
+    color: var(--white);
 }
