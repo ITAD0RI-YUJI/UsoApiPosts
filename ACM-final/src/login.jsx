@@ -8,9 +8,9 @@ import './styles/login/containerForm.css'
 import './styles/login/form.css'
 import './styles/bases.css'
 
-function Login() {
-  const [userName , setUserName] = useState('')
-  const [password , setPassword] = useState('')
+function Login({auth}) {
+  const [userName , setUserName] = useState("")
+  const [password , setPassword] = useState("")
 
   async function handleLogin(e){
     e.preventDefault()
@@ -19,14 +19,16 @@ function Login() {
       const dataRes = await login(password , userName)
       const status = dataRes.status;
       const info = dataRes.data;
-
-      if(status === 200) alert(`Binevenid@ ${info.firstName}`); 
-
+      
       console.log(status)
       console.log(info)
+
+      if(status === 200){
+        auth(true)
+      }
     }
     catch{
-      console.error("Login incorrecto");
+      alert("Login incorrecto");
     }
   }
 

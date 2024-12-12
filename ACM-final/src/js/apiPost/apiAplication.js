@@ -4,7 +4,7 @@ import {tags} from './tags.js';
 import {users , getUserName} from './user-name.js';
 import {fecha , mesArray} from './fecha.js';
  
-const apiUrl = 'https://dummyjson.com/posts';
+export const apiUrl = 'https://dummyjson.com/posts';
 
 let callApi = async url =>{
     let getPost = await getApiContent(url);
@@ -12,7 +12,7 @@ let callApi = async url =>{
     return getPost;
 }
 
-async function useInfo(url){
+export async function useInfo(url){
     let infoApi = await callApi(url);
 
     let post = infoApi.posts;
@@ -26,4 +26,4 @@ async function useInfo(url){
                     postSelected.reactions.likes , postSelected.reactions.dislikes , postSelected.views , fecha(mesArray));
     });
 }
-useInfo(apiUrl);
+// useInfo(apiUrl);

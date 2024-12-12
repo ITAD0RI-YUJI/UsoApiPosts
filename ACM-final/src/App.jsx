@@ -6,13 +6,13 @@ import Principal from './principal.jsx'
 
 function App() {
 
-  // const [auth , setAuth] = useState(false);
-  // setAuth(false)
+  const [auth , setAuth] = useState(false);
 
   return (
     <>
       {/* <Principal /> */}
-      <Login/>
+      
+      {auth ? <Principal /> : <Login auth={setAuth} />}
     </>
   )
 }
